@@ -1,2 +1,2 @@
 # Final
-The inal countdown
+The Final countdown
