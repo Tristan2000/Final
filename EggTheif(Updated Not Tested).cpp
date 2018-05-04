@@ -52,38 +52,38 @@ int main(int argc, char *argv[]) {
 			if(s == 'W' || s =='w'){
 				cout << "You went up" << endl;
 				if(field[x][y] != 'O'){
-					y += 1;
+					yPos += 1;
 				}
 			}
 			if(s == 'A' || s =='a'){
 				cout << "You went left" << endl;
 				if(field[x][y] != 'O'){
-					x -= 1;
+					xPos -= 1;
 				}
 			}
 			if(s == 'S' || s =='s'){
 				cout << "You went down" << endl;
 				if(field[x][y] != 'O'){
-					y -= 1;
+					yPos -= 1;
 				}
 			}
 			if(s == 'D' || s =='d'){
 				cout << "You went right" << endl;
 				if(field[x][y] != 'O'){
-					x += 1;
+					xPos += 1;
 				}
 			}
-			if(x >= 60){
-				x = 0;
+			if(xPos >= 60){
+				xPos = 0;
 			}
-			if(x < 0){
-				x = 59;
+			if(xPos < 0){
+				xPos = 59;
 			}
-			if(y > 30){
-				y = 0;
+			if(yPos > 30){
+				yPos = 0;
 			}
-			if(y < 0){
-				y = 30;
+			if(yPos < 0){
+				yPos = 30;
 			}
 			if(field[x][y] == 'Θ'){
 				levelup(level); // We will make this a function later.
