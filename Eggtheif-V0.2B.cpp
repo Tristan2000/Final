@@ -11,19 +11,6 @@
 #include <ctime>
 
 using namespace std;
-void Field(char field[60][31]){
-	int x = 0;
-	int y = 0;
-	ofstream land;
-	land.open("Eggland.txt", ios::out);
-	for(x = 0; x < 31; x++){
-		for(y = 0; y < 60; y++){
-			land << ' ';
-		}
-		land << endl;
-	}
-	land.close();
-}
 void StoreField(char field[60][31]){
 	int x = 0;
 	int y = 0;
@@ -51,15 +38,11 @@ int main(int argc, char *argv[]) {
 	int y = 0;
 	
 	srand(static_cast<int>(time(0)));
-	for(int m = 0; m < rand() % 1000; m++){
-		srand(static_cast<int>(time(0)));
-	}
-	system("open /Users/student/Documents/eggtheif.html");
+	system("open /Users/student/Downloads/Final-master/Egg-Theif-V0.2B.html");
 	
-	Field(field);
 	for(x = 0; x < 0; x++){
 		for(y = 0; y < 0; y++){
-			field[x][y] = ' ';
+			field[x][y] = '*';
 		}
 	}
 	for(int t = 0; t < 15*level; t++){
@@ -70,8 +53,8 @@ int main(int argc, char *argv[]) {
 	r1 = (rand() % (61)) - 1;
 	r2 = (rand() % (32)) - 1;
 	field[r1][r2] = '0';
-
-
+	
+	
 	StoreField(field);
 	
 	while(s != 'Q'){
@@ -118,10 +101,9 @@ int main(int argc, char *argv[]) {
 			}
 			if(field[xPos][yPos] == '0'){
 				level += 1;
-				Field(field);
 				for(x = 0; x < 0; x++){
 					for(y = 0; y < 0; y++){
-						field[x][y] = ' ';
+						field[x][y] = '*';
 					}
 				}
 				for(int t = 0; t < 15*level; t++){
