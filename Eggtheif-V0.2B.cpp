@@ -49,8 +49,11 @@ int main(int argc, char *argv[]) {
 	int r2 = 0;
 	int x = 0;
 	int y = 0;
-	srand(static_cast<int>(time(0)));
 	
+	srand(static_cast<int>(time(0)));
+	for(int m = 0; m < rand() % 1000; m++){
+		srand(static_cast<int>(time(0)));
+	}
 	system("open /Users/student/Documents/eggtheif.html");
 	
 	Field(field);
@@ -75,12 +78,12 @@ int main(int argc, char *argv[]) {
 			system("stty raw");
 			s = getchar();
 			
-			
+			field[xPos][yPos] = ' ';
 			
 			if(s == 'W' || s =='w'){
 				cout << "You went up" << xPos << yPos << endl;
 				if(field[xPos][yPos] != 'O'){
-					yPos += 1;
+					yPos -= 1;
 				}
 			}
 			if(s == 'A' || s =='a'){
@@ -92,7 +95,7 @@ int main(int argc, char *argv[]) {
 			if(s == 'S' || s =='s'){
 				cout << "You went down" << endl;
 				if(field[xPos][yPos] != 'O'){
-					yPos -= 1;
+					yPos += 1;
 				}
 			}
 			if(s == 'D' || s =='d'){
