@@ -17,3 +17,5 @@ When you start the program you will need to switch to whatever you are using to 
 	r1 = (rand() % (61)) - 1;
 	r2 = (rand() % (32)) - 1;
 	field[r1][r2] = '@';
+## Contributors
+Austin and Tristan.
