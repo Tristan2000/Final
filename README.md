@@ -18,6 +18,7 @@ When you start the program you will need to switch to whatever you are using to 
 	r2 = (rand() % (32)) - 1;
 	field[r1][r2] = '@';
 	
+<img src="ExampleRun.png"></img>
 
 ## Contributors
 Austin Prince and Tristan Jones
