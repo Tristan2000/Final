@@ -9,7 +9,7 @@ system("open /Users/student/Downloads/Final-master/Egg-Theif-V1.0B.html");
 When you start the program you will need to switch to whatever you are using to run C++. This is because C++ takes your input and not the html. Make sure to use the cpp labeled as V1.0 and have all other V1.0 files in the folder with it as well as the proper system path for the html, the html does not have to be in the same folder as long as its path is copied corectly.
 
 ## Example Code
-// Initial Location of X and @ \\
+/* Initial Location of X and @ */
 	
 	xPos = (rand() % (61)) - 1;
 	yPos = (rand() % (32)) - 1;
@@ -17,5 +17,7 @@ When you start the program you will need to switch to whatever you are using to 
 	r1 = (rand() % (61)) - 1;
 	r2 = (rand() % (32)) - 1;
 	field[r1][r2] = '@';
+	
+
 ## Contributors
-Austin and Tristan.
+Austin Prince and Tristan Jones
