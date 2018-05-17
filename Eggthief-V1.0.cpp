@@ -1,5 +1,5 @@
 /******************************\
-* Program: EggTheif.cpp  BETA  *
+* Program: EggThief.cpp  BETA  *
 * Creators: Tristan and Austin *
 * Last Edit: 5/11/18           *
 \******************************/
@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
 	/* Initialization of Random Numbers and HTML */
 	
 	srand(static_cast<int>(time(0)));
-	system("open /Users/student/Documents/Egg-Theif-V1.0.html");
+	system("open /Users/student/Documents/Egg-Thief-V1.0.html");
 	
 	cout << "Please Select CodeRunner to Continue." << endl;
 	
@@ -211,7 +211,7 @@ int main(int argc, char *argv[]) {
 	
 	/* Retrieve Highscore */
 	
-	/*high.open("XHighScore.txt", ios::in);
+	/*high.open("HighScore.txt", ios::in);
 	if (high.is_open()){
 		high >> highs;
 		getline(high, highs, '#');
