@@ -230,7 +230,7 @@ int main(int argc, char *argv[]) {
 	string newHighscore = "";
 	if(level > highScore){
 		newHigh.open("HighScore.txt", ios::out);
-		newHigh << to_string(level) + "#";
+		newHigh << to_string(level);
 		newHigh.close();
 		newHighscore = "  New Highscore, Past Highscore: " + to_string(highScore) + "  ";
 		for(n = 0; n < (newHighscore.length() - 1); n++){
